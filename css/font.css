@@ -1,0 +1,19 @@
+.modal-content{
+
+	background-color: #555;
+}
+
+ul.social-buttons li a {
+	/*color: #42dca3;*/
+	/*background-color: #fff;*/
+	
+	display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #222;
+    background-color: #fff;
+}
