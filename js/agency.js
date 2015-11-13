@@ -24,3 +24,9 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$('#myButton').on('click', function(event) {
+  event.preventDefault(); // To prevent following the link (optional)
+
+
+});
