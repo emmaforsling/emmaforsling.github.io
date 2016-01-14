@@ -1,6 +1,7 @@
 .modal-content{
 
-	background-color: #555;
+	background-color: #46A2DB;
+    background-color: #fff;
 }
 
 ul.social-buttons li a {
@@ -24,6 +25,41 @@ ul.social-buttons li a {
     background-color: #fff;
 }
 
+a {
+    color: #46A2DB;
+}
+
+p{
+    color: #000;
+}
+
+
+h2#blackText {
+    color: #46A2DB;
+    color: #000;
+}
+
+h3#blackText {
+    color: #46A2DB;
+    color: #000;
+}
+
+.text-muted {
+    color: #000;
+}
+
+
+.btn-default {
+    border: 1px solid #46A2DB;
+    color: #46A2DB;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #46A2DB;
+    background-color: #46A2DB;
+}
+
 
 .greenBackground{
     background-color: #3FD496;
@@ -37,4 +73,10 @@ ul.social-buttons li a {
 .whiteBackground{
     background-color: #fff;
     color: #fff;
+}
+
+
+
+.navbar-custom .nav li.active a {
+    color: #46A2DB;
 }

@@ -130,7 +130,7 @@
     width: 2px;
     height: 75px;
     margin-left: 35px;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -140,7 +140,7 @@
     z-index: 1052;
     width: 2px;
     height: 75px;
-    background-color: #fff;
+    background-color: #000;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
