@@ -116,7 +116,7 @@
     top: 25px;
     right: 25px;
     width: 75px;
-    height: 75px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -128,7 +128,7 @@
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 2px;
-    height: 75px;
+    height: 50px;
     margin-left: 35px;
     background-color: #000;
     -webkit-transform: rotate(45deg);
@@ -139,7 +139,7 @@
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 2px;
-    height: 75px;
+    height: 50px;
     background-color: #000;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
