@@ -14,8 +14,9 @@ ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
     outline: 0;
-    color: #222;
-    background-color: #fff;
+    color: #fff;
+    /*background-color: #222;*/
+    background-color: #46A2DB;
 }
 
 .blueBtn{
@@ -26,6 +27,11 @@ ul.social-buttons li a {
 
 .greenBackground{
     background-color: #3FD496;
+}
+
+.blueBackground {
+    /*background-color: #5ABDFA;*/
+    background-color: #46A2DB;
 }
 
 .whiteBackground{
