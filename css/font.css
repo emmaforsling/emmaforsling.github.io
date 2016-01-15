@@ -3,6 +3,13 @@
 	background-color: #46A2DB;
     background-color: #fff;
 }
+.intro {
+    background-color: #46A2DB;
+}
+
+.navbar-custom{
+    background-color: #46A2DB;   
+}
 
 ul.social-buttons li a {
 	/*color: #42dca3;*/
