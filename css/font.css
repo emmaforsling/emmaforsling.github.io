@@ -1,6 +1,53 @@
+
+a {
+    color: #46A2DB;
+}
+
+p{
+    color: #000;
+}
+/* Background colors */
+.greenBackground{
+    background-color: #3FD496;
+}
+
+.blueBackground {
+    /*background-color: #5ABDFA;*/
+    background-color: #46A2DB;
+    padding-bottom: 100px;
+}
+
+.whiteBackground{
+    background-color: #fff;
+    color: #fff;
+    padding-bottom: 200px;
+}
+
+/* Colors on the image buttons */
+.blueBtn{
+    color: #09f;
+    background-color: #fff;
+}
+
+/* Color on text */
+
+.blackText {
+    color: #000;
+}
+
+
+.blueText{
+    color: #46A2DB;
+}
+
+.text-muted {
+    color: #000;
+}
+
+/* Changes */ 
 .modal-content{
 
-	/*background-color: #46A2DB;*/
+    /*background-color: #46A2DB;*/
     background-color: #fff;
 }
 .intro {
@@ -11,11 +58,12 @@
     background-color: #46A2DB;   
 }
 
+
 ul.social-buttons li a {
-	/*color: #42dca3;*/
-	/*background-color: #fff;*/
-	
-	display: block;
+    /*color: #42dca3;*/
+    /*background-color: #fff;*/
+    
+    display: block;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -27,35 +75,8 @@ ul.social-buttons li a {
     background-color: #46A2DB;
 }
 
-.blueBtn{
-    color: #09f;
-    background-color: #fff;
-}
 
-a {
-    color: #46A2DB;
-}
-
-p{
-    color: #000;
-}
-
-
-h2#blackText {
-    color: #46A2DB;
-    color: #000;
-}
-
-h3#blackText {
-    color: #46A2DB;
-    color: #000;
-}
-
-.text-muted {
-    color: #000;
-}
-
-
+/* btn */
 .btn-default {
     border: 1px solid #46A2DB;
     color: #46A2DB;
@@ -66,23 +87,6 @@ h3#blackText {
     border: 1px solid #46A2DB;
     background-color: #46A2DB;
 }
-
-
-.greenBackground{
-    background-color: #3FD496;
-}
-
-.blueBackground {
-    /*background-color: #5ABDFA;*/
-    background-color: #46A2DB;
-}
-
-.whiteBackground{
-    background-color: #fff;
-    color: #fff;
-}
-
-
 
 .navbar-custom .nav li.active a {
     color: #46A2DB;
