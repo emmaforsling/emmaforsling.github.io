@@ -9,7 +9,8 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #222;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #FFFEF7;
 }
 
 html {
@@ -145,7 +146,7 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        /*border-bottom: 1px solid rgba(255,255,255,.3);*/
         background: transparent;
     }
 }
