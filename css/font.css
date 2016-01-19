@@ -23,6 +23,10 @@ p{
     padding-bottom: 200px;
 }
 
+.footerBackground{
+    padding-bottom: 500px;
+}
+
 /* Colors on the image buttons */
 .blueBtn{
     color: #09f;
