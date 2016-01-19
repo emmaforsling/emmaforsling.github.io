@@ -23,6 +23,11 @@ p{
     padding-bottom: 200px;
 }
 
+.contactBackground{
+    background-color: #fff;
+    color: #fff;
+}
+
 .footerBackground{
     padding-bottom: 500px;
 }
