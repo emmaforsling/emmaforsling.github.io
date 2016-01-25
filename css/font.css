@@ -1,12 +1,28 @@
 
 a {
     color: #46A2DB;
+    font-family: 'Slabo', serif;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Slabo', serif;
 }
 
 p{
     color: #000;
 }
-/* Background colors */
+
+body {
+    /*font-family: "Times-New-Roman";*/
+    /*font-family: 'Slabo 27px', serif;*/
+}
+
+/***************************************
+            Background colors 
+****************************************/
 .greenBackground{
     background-color: #3FD496;
 }
@@ -28,35 +44,50 @@ p{
     color: #fff;
 }
 
+/***************************************
+            Background padding
+****************************************/
+
+.aboutMepaddding {
+    padding-top: 200px;
+}
+
 .footerBackground{
     padding-bottom: 500px;
 }
 
-/* Colors on the image buttons */
+/***************************************
+    Colors on the image buttons 
+****************************************/
 .blueBtn{
     color: #09f;
     background-color: #fff;
 }
 
-/* Color on text */
+/***************************************
+    Color on text 
+****************************************/
 
 .blackText {
     color: #000;
 }
 
-
 .blueText{
     color: #46A2DB;
+}
+
+.whiteText{
+    color:#fff;
 }
 
 .text-muted {
     color: #000;
 }
 
-/* Changes */ 
+/***************************************
+     Bootrstrap customizations 
+****************************************/
 .modal-content{
-
-    /*background-color: #46A2DB;*/
     background-color: #fff;
 }
 .intro {
@@ -64,7 +95,8 @@ p{
 }
 
 .navbar-custom{
-    background-color: #46A2DB;   
+    background-color: #46A2DB;
+    background-color: transparent;   
 }
 
 
