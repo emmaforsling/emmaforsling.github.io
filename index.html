@@ -130,7 +130,7 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
+    <!-- <header class="intro">
         <div class="intro-body blueBackground">
             <div class="container">
                 <div class="row">
@@ -144,7 +144,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
 <!-- test -->
 
@@ -181,6 +181,23 @@
                 </div>
             </div>
             <div class="row">
+                <!-- Procedural fog on a windowpane -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal_ProceduralFog" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ProceduralFog.png" class="img-responsive" alt="">
+                    </a>
+                        
+                    <div class="portfolio-caption">
+                        <h4>Procedural Fog</h4>
+                        <p class="text-muted">WebGL</p>
+                    </div>
+                </div>
+
                 <!-- SFX soft body simulation plugin maya-->
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal_SoftBodySimulation" class="portfolio-link" data-toggle="modal">
@@ -436,9 +453,45 @@
     <!-- <div id="map"></div> -->
 
 <!-- Portfolio Modals -->
-    
 
-    <!-- Portfolio Modal 1  - SFX -->
+    <!-- Portfolio Modal  - Procedural images -->
+    <div class="portfolio-modal modal fade" id="portfolioModal_ProceduralFog" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Close modal - cross -->
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr"><div class="rl"></div></div>
+                </div>
+                <!-- Information -->
+                <div class="row">
+                    <div class="col-lg-1 text-center"></div>
+                    <div class="col-lg-10 text-center">
+                        <h2 class="blackText">Procedural Fog on a Windowpane</h2>
+                        <p> Utilizing Classic Perlin noise and Simplex noise in order to create procedural fog on a windowpane.</p>
+                    </div>
+                    <div class="col-lg-1 text-center"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-1 text-center"></div>
+                    <div class="col-lg-5 text-center">
+                        <img src="img/portfolio/ProceduralFog.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <p> Check it out on <a href="https://github.com/emmaforsling/Procedural-Fog" target="_blank">GitHub</a> or try it out <a href="http://emmaforsling.github.io/projects/Procedural-Fog/" target="_blank">here</a> </p>
+                        <p>View report <a href=" reports/TNM084_Procedural_Fog_emmfo731.pdf">here</a>. </p>
+                        <p> Date: March, 2016 </p>
+                        <p> Course: TNM084 - Procedural Images</p> 
+                    </div>
+                    <div class="col-lg-1 text-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Portfolio Modal  - SFX -->
     <div class="portfolio-modal modal fade in" id="portfolioModal_SoftBodySimulation" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             
@@ -631,7 +684,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 text-center">
-                        <p> Check it out on <a href="https://github.com/martingrad/InfoViz" target="_blank">GitHub</a> or try it out <a href="http://martingrad.github.io/pages/InfoViz/index.html" target="_blank">here</a> </p>
+                        <p> Check it out on <a href="https://github.com/martingrad/InfoViz" target="_blank">GitHub</a> or try it out <a href="http://emmaforsling.github.io/projects/InfoViz/" target="_blank">here</a> </p>
                         <p> Date: April, 2015 </p>
                         <p> Course: TNM048 - Information Visualization</p> 
                     </div>

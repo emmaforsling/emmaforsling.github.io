@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <style>
+            .graticule {
+              fill: none;
+              stroke: #777;
+            }
+            .boundary {
+              fill: #ccc;
+              fill-opacity: .8;
+              stroke: #000;
+            }
+            .arc path {
+                stroke: #fff;
+            }
+            .extraText {
+                font-size: 20px;
+            }
+        </style>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/colorbrewer.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/customized.css">
+
+        <!--modules css-->
+        <link rel="stylesheet" href="css/pc.css">
+        <link rel="stylesheet" href="css/sp.css">
+        <link rel="stylesheet" href="css/map.css">
+
+    </head>
+    <body>
+        <div id="spinner-box"></div>
+        <!-- Wrap all page content here -->
+        <div id="wrap">
+            <!-- Fixed navbar -->
+            <div class="navbar navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Valresultat i Sverige</a>
+                    </div>                
+                </div>
+            </div>
+
+            <!-- Begin page content -->
+            <div class="container">
+                <!-- row of columns -->
+                <div class="row">
+                    <div class="col-xs-6" >
+                        <div id="donutWrapper" style="height: 45vh; ">
+                            <div class="btn-group" style="position:center; position:absolute">
+                                <select id="selectYear" onchange="selectYearAndCalculateClusters(value), sp1.selectYear(value), donut.selectYear(value), map.selectYear(value)">
+                                    <option value="2010">2010</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2002">2002</option>
+                                </select>
+                                <select id="selectRegion" onchange="donut.selectPieFromSelect()"></select>
+                            </div>
+                            <div id="donut" style="width: 100%; height: 100%; "></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div id="map" style="height: 45vh; z-index: -1;">
+                            <div class="btn-group" style="position:center; position:absolute">
+                                <form id="colorModeForm">
+                                    <input type="radio" name="radioName" value="majority" checked="checked"/> Störst parti <br />
+                                    <input type="radio" name="radioName" value="clusters" /> Kluster <br />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    </br>
+                    <div class="col-xs-12">
+                        <div><span style="font-size:24px">Klustrerade kommuner</span> Normaliserade värden</div>                      
+                        </br>
+                        <div id="pc" style="height: 30vh;"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-xs-3">
+                        <br><br><br><br><br><br><br><br><br><br>
+                        
+
+                        <address>
+                            <strong>Emma Forsling Parborg</strong><br>
+                            <a href="mailto:#">emmfo731@student.liu.se</a><br>
+                            <strong>Martin Gråd</strong><br>
+                            <a href="mailto:#">margr484@student.liu.se</a>
+                        </address>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3>Välj ut parametrar av intresse för att skapa ett sambandsdiagram</h3>
+                        <div id="sp" style="height: 55vh;">
+                            <div class="btn-group" style="position:center; position:absolute">
+                                <!-- For scatterPlot X-axis -->
+                                x-axeln:
+                                <select id="setXAxis" onchange="sp1.selectXAxis()"></select>
+                                y-axeln:
+                                <!-- For scatterPlot Y-axis -->
+                                <select id="setYAxis" onchange="sp1.selectYAxis()"></select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/d3.min.js"></script>
+        <script src="js/vendor/topojson.v1.min.js"></script>
+        <script src="js/vendor/underscore-min.js"></script>
+        <script src="js/vendor/colorbrewer.js"></script>
+        <script type="text/javascript" src="js/vendor/jDBSCAN.js"></script>
+        <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+
+        <!--modules js-->
+        <script src="js/pc.js"></script>
+        <script src="js/sp.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/donut.js"></script>
+        <script src="js/vendor/spin.js"></script>
+        <script src="js/dbscan.js"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
