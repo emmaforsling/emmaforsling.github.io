@@ -39,6 +39,11 @@ body {
     padding-bottom: 200px;
 }
 
+.greyBackground{
+    background-color: #e7e7e7;
+    padding-bottom: 100px;
+}
+
 .contactBackground{
     background-color: #fff;
     color: #fff;
